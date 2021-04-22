@@ -33,11 +33,13 @@ cd smart-loan
 ng add @angular/material
 npm install bootstrap@4.6.0
 
-npm install -g firebase-tools
 ng build --prod
-firebase-login
-firebase-init
-firebase-deploy
+
+## Deploy
+npm install -g firebase-tools
+firebase login
+firebase init
+firebase deploy
 
 ## Note
 https://www.remotestack.io/angular-firebase-firestore-real-time-crud-example-tutorial/
