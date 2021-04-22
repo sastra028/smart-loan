@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Command
+npm install -g @angular/cli
+ng new smart-loan
+cd smart-loan
+ng add @angular/material
+npm install bootstrap@4.6.0
+
+npm install -g firebase-tools
+ng build --prod
+firebase-login
+firebase-init
+firebase-deploy
+
+## Note
+https://www.remotestack.io/angular-firebase-firestore-real-time-crud-example-tutorial/
