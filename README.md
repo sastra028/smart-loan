@@ -31,7 +31,8 @@ npm install -g @angular/cli
 ng new smart-loan
 cd smart-loan
 ng add @angular/material
-npm install bootstrap@4.6.0
+npm install bootstrap
+npm install firebase @angular/fire
 
 ng build --prod
 
@@ -43,3 +44,8 @@ firebase deploy
 
 ## Note
 https://www.remotestack.io/angular-firebase-firestore-real-time-crud-example-tutorial/
+
+## Create user service
+ng g c create-user
+ng g c list-user
+ng g c edit-user

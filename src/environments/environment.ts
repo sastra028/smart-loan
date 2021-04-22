@@ -1,13 +1,12 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyClwv7KksWaEkC5GDfcEL9cpPkW8nEsam4",
-    authDomain: "smart-loan-96822.firebaseapp.com",
-    databaseURL: "https://smart-loan-96822-default-rtdb.firebaseio.com",
-    projectId: "smart-loan-96822",
-    storageBucket: "smart-loan-96822.appspot.com",
-    messagingSenderId: "986321169051",
-    appId: "1:986321169051:web:cc2d9eaefc67a7755a743e",
-    measurementId: "G-7HSZJE7YWC"
+    apiKey: "AIzaSyDDh7X3Szf3Bt4O413jXh4b7dOC86j9WVM",
+    authDomain: "smart-loan-53aed.firebaseapp.com",
+    projectId: "smart-loan-53aed",
+    storageBucket: "smart-loan-53aed.appspot.com",
+    messagingSenderId: "866952953128",
+    appId: "1:866952953128:web:50745e9b8925b15d52e41d",
+    measurementId: "G-CW9BJVT4N0"
   }
 };

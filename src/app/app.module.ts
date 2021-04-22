@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { environment } from "../environments/environment";
 import { AngularFireModule } from "@angular/fire";
@@ -24,7 +23,6 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     FormsModule,

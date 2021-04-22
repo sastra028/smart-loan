@@ -14,14 +14,16 @@ export class ListUserComponent implements OnInit {
   constructor(private userService: UserService) { }
 
   ngOnInit() {
-    this.userService.getUserList().subscribe(res => {
+      this.userService.getUserList().subscribe(res => {
       this.Users = res.map( e => {
+
         return {
           id: e.payload.doc.id
         } as User;
       })
-    });    
+    });
   }
 
   removeUser = user => this.userService.deleteUser(user);
+  
 }
