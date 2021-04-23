@@ -40,6 +40,7 @@ ng build --prod
 npm install -g firebase-tools
 firebase login
 firebase init
+ng build --prod
 firebase deploy
 
 ## Note
@@ -49,3 +50,14 @@ https://www.remotestack.io/angular-firebase-firestore-real-time-crud-example-tut
 ng g c create-user
 ng g c list-user
 ng g c edit-user
+ng g service service/user
+ng g class model/user --type=model
+
+ng g service service/loan-transaction
+ng g class model/loan-transaction --type=model
+
+ng g service service/loan-account
+ng g class model/loan-account --type=model
+
+ng g service service/loan-statement
+ng g class model/loan-statement --type=model

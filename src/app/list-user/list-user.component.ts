@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../user.service';
-import { User } from '../user.model';
+import { UserService } from '../service/user.service';
+import { User } from '../model/user.model';
 
 @Component({
   selector: 'app-list-user',
@@ -18,6 +18,7 @@ export class ListUserComponent implements OnInit {
       this.Users = res.map( e => {
         const id = e.payload.doc.id;
         const data = e.payload.doc.data() as User;
+        console.log('name' + data.name);
         return {id, ...data
         } as User;
       })
