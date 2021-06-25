@@ -11,44 +11,45 @@ export class LoanStatementService {
 
   getLoanStatementDoc(id) {
     return this.angularFirestore
-    .collection('loanTransaLoan-transaction')
+    .collection('loan-statement')
     .doc(id)
     .valueChanges()
   }
 
   getLoanStatementList() { 
     return this.angularFirestore
-    .collection("loanTransaLoan-transaction")
+    .collection("loan-statement")
     .snapshotChanges();
   }
 
-  createLoanStatement(LoanStatement: LoanStatement) {
+  createLoanStatement(loanStatement: LoanStatement) {
     return new Promise<any>((resolve, reject) =>{
       this.angularFirestore
-        .collection("loanTransaLoan-transaction")
-        .add(LoanStatement)
+        .collection("loan-statement")
+        .add(loanStatement)
         .then(response => { console.log(response) }, error => reject(error));
     });
   }
 
-  deleteLoanStatement(LoanStatement) {
+  deleteLoanStatement(loanStatement) {
     return this.angularFirestore
-      .collection("loanTransaLoan-transaction")
-      .doc(LoanStatement.id)
+      .collection("loan-statement")
+      .doc(loanStatement.id)
       .delete();
   }
   
-  updateLoanStatement(LoanStatement: LoanStatement, id) {
+  updateLoanStatement(loanStatement: LoanStatement, id) {
     return this.angularFirestore
-      .collection("loanTransaLoan-transaction")
+      .collection("loan-statement")
       .doc(id)
       .update({
-        accountId: LoanStatement.accountId,
-        firstName: LoanStatement.firstName,
-        lastName: LoanStatement.lastName,
-        citizenId: LoanStatement.citizenId,
-        status: LoanStatement.status,
-        loanAmount: LoanStatement.loanAmount
+        statementId: loanStatement.statementId,
+        accountId: loanStatement.accountId,
+        transactionId: loanStatement.transactionId,
+        paidInterest: loanStatement.paidInterest,
+        paidPrincipal: loanStatement.paidPrincipal,
+        paidFine: loanStatement.paidFine,
+        slip: loanStatement.slip,
       });
   }
 

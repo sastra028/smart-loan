@@ -61,3 +61,10 @@ ng g class model/loan-account --type=model
 
 ng g service service/loan-statement
 ng g class model/loan-statement --type=model
+
+ng g c loan-transaction-home
+ng g c loan-transaction-due
+ng g c loan-transaction-over
+ng g c loan-transaction-create
+ng g c loan-account-create
+ng g c loan-statement-paid
